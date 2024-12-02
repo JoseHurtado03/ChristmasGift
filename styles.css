@@ -1,0 +1,92 @@
+body {
+  background-color:#151522;
+  overflow: hidden;
+    display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+svg{
+  width:90%;
+  height:90%;
+  visibility:hidden;
+ 
+}
+
+.sparkle{
+  /* mix-blend-mode:luminosity */
+}
+
+.bauble {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+@media (max-width: 360px) {
+  /* Aseguramos que el árbol se vea más grande en pantallas pequeñas */
+  
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hacer que el árbol sea más grande aún */
+  .tree {
+    transform: scale(1.5); /* Aumentar más el tamaño del árbol */
+    transform-origin: center;
+  }
+
+  /* Aumentar el tamaño de las bambalinas */
+  .bauble {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bauble image {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Aumentar el tamaño de las chispas */
+  .sparkle {
+    scale: 1.5; /* Aumentar el tamaño de las chispas */
+  }
+
+  /* Aumentar el tamaño de la estrella */
+  .treeStar {
+    transform: scale(2); /* Hacer la estrella aún más grande */
+    position: relative;
+    left: 50%;
+    transform: translateX(-25.5%) scale(1.5); /* Centrar y aumentar el tamaño */
+  }
+
+  /* Ajustar las posiciones y tamaños de las bambalinas */
+  .bauble {
+    transform: scale(2.5); /* Aumentar más el tamaño de las bambalinas */
+    transition: transform 0.3s ease;
+  }
+
+  /* Ajustar las líneas del árbol para que sean más gruesas */
+  .treePath {
+    stroke-width: 4; /* Hacer las líneas del árbol aún más gruesas */
+  }
+
+  /* Asegurar que los contenedores se ajusten a pantallas más pequeñas */
+  .pContainer {
+    transform: scale(3); /* Aumentar el tamaño de los contenedores */
+  }
+
+  /* Ajustar la posición de las bambalinas para que se adapten a la escala */
+  .bauble {
+    margin: 15px; /* Ajustar el margen para que no se sobrepongan */
+  }
+}
