@@ -1,9 +1,4 @@
-setInterval(() => {
-  const expectedUrl = "https://josehurtado03.github.io/ChristmasGift/";
-  if (window.location.href !== expectedUrl) {
-    window.location.href = expectedUrl;
-  }
-}, 100);
+gsap.config({trialWarn: false});
 
 MorphSVGPlugin.convertToPath('polygon');
 var xmlns = "http://www.w3.org/2000/svg",
